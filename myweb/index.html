@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atchu_Paradise</title>
+    <style>
+        body{
+            font-family: fantasy;
+            color:white;
+            background:linear-gradient(
+                rgba(0,0,0,0.95),rgba(0,0,0,0.95)
+            ),url(food2.jpg) no-repeat;
+            background-size: cover;
+        }
+        #box{
+        width:900px;
+        float:right;
+        border: 1px solid black;
+        background-color: black;
+        }
+        #box ul li{
+        width:150px;
+        float:left;
+        margin: 10px auto;
+        text-align:center;
+        }
+        #box ul li a{
+            text-decoration:none;
+            color:aliceblue;
+        }
+        #box ul li:hover{background-color: green;}
+        #box ul li a:hover{ color:white;}
+        h1
+        {
+            font-size: 40px;
+            font-family: cursive;
+            color:chocolate;
+            letter-spacing: 3px;
+        }
+        #name
+        {
+            float:right;
+            width:100%;
+            text-align: center;
+            padding-left,padding-right: 40px;
+            padding-top:50px;
+        }
+        #login{
+            background: black;
+            height: 200px;
+            width: 300px;
+            position:absolute;
+            top:55%;
+            left:40%;
+            padding:12px;
+        }
+        #login a{
+            color: aliceblue;
+        }
+        marquee{
+            text-shadow: 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <ul type="none" >
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Menu.html">MENU</a></li>
+        <li><a href="OrderOnline.html" target="_self">ONLINE ORDER</a></li>
+        <li><a href="BookTable.html" target="_self">BOOK TABLE</a></li>
+        <li><a href="Contact.html" target="_self">CONTACT</a></li>
+    </ul>
+    </div>
+    <div id="name">
+    <h1>Welcome to Restaurant<br>ATCHU PARADISE</h1>
+    <h4>Please Login or Signin to get updates of the special offers.</h4>
+    </div>
+    
+    <div id="login">
+        <div class="l1"><p>Username :</p></div>
+        <div class="l2"><input type="text"><br></div>
+        <div class="l3"><p>Password :</p></div>
+        <div class="l4"><input type="text"><br><br></div>
+        <div class="l5"><input type="Button" value="LOGIN">&nbsp;&nbsp;<a href="Signin.html">Sign in</a></div>
+    </div>
+</body>
+</html>
