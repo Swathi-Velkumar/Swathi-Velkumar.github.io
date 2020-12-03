@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    body{
+            font-family: fantasy;
+            color:white;
+            background:
+                linear-gradient(
+                rgba(0,0,0,0.70),rgba(0,0,0,0.70)
+            ),url(food2.jpg) no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <a href="index2.html" class="btn btn-info" style="color:chocolate">
+          <span class="glyphicon glyphicon-home" style="color:chocolate"></span> Home
+        </a>    
+    </div>
+    <div class="container">
+    <h2>AWAITING FOR YOUR FEEDBACK</h2>
+    <form action="/action_page.php">
+    <div class="form-group" >
+    <div class="row">
+    <div class="col-sm-6">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+      </div>          
+    <div class="row"> 
+    <div class="col-sm-6">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+      </div>
+      <label for="pwd">Rating:</label>
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked>Satisfied</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio">Very Satisfied</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" >Not Satisfied</label>
+    </div>
+    <div class="row">
+    <div class="col-sm-6">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</body>
+</html>
