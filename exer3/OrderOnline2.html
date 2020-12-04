@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Online</title>
+    <style>
+        body{
+            line-height: 35px;
+            font-family: fantasy;
+            color:white;
+            background: linear-gradient(
+            rgba(0,0,0,0.80),rgba(0,0,0,0.80)
+            ),url(food2.jpg) no-repeat;
+            background-size: cover;
+
+        }
+        fieldset {
+          display: block;
+          margin-left: 350px;
+          margin-right: 350px;
+        }
+        {
+            box-sizing: border-box;
+        }
+        #div1 {
+        float: left;
+        width: 25%;
+        padding: 50px;
+        }
+        #div2{
+            width:20%;
+            float: left;
+            padding: 50px;
+
+        }
+        #div3{
+            float: left
+            width: 40%
+        }
+        a{
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <a href="index2.html" target="_self">HOME</a>
+    <form>
+    <fieldset>
+    <legend>ORDER ONLINE</legend>
+    <div id='div1'>
+        <label for="name">Your name:</label><br>
+        <label for="number">Mobile:</label><br>
+        <label for="mail">Mail ID:</label><br>
+        <label for="address">Delivery Address:</label><br>
+        <label for="menu">Order Menu:</label>
+    </div>
+    <div id='div2'>
+        <input type="text" id="name" name="name"><br>
+        <input type="tel" id="number" placeholder="10 digits" pattern="[0-9]{10}" name="number"><br>
+        <input type="email" id="mail" name="mail"><br>
+        <input type="text" id="address" name="address"><br>
+        <textarea name="menu" rows="6" cols="20"></textarea><br>
+        <input type="submit" value="SUBMIT">
+    </div>
+    </form>
+    </fieldset><br>
+    
+    
+</body>
+</html>

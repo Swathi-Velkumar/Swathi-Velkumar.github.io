@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Booking</title>
+    <style>
+        body{
+            line-height: 35px;
+            font-family: fantasy;
+            color:white;
+            background:linear-gradient(
+            rgba(0,0,0,0.80),rgba(0,0,0,0.80)
+            ),url(food3.jpg) no-repeat; 
+            background-size: cover;
+        }
+        fieldset {
+          display: block;
+          margin-left: 350px;
+          margin-right: 350px;
+        }
+        h2{
+            padding-left: 8%;
+        }
+        {
+            box-sizing: border-box;
+        }
+        #div1 {
+        float: left;
+        width: 40%;
+        padding: 20px;
+        }
+        #div2{
+            width:30%;
+            float: left;
+            padding: 20px;
+
+        }
+        p{
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        table,td{
+            padding: 10px;
+            border: 2px solid aliceblue;
+            border-collapse: collapse;
+        }
+        a{
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <a href="index2.html" target="_self">HOME</a>
+    <fieldset>
+    <legend>ONLINE BOOKING</legend>
+    <div id='div1'>
+        <label for="name">Your name:</label><br>
+        <label for="number">Mobile:</label><br>
+        <label for="people">No. of people(5-250):</label><br>
+        <label for="date">Required Date:</label><br>
+        <label for="time">Start time:</label><br>
+        <label for="time1">End time:</label><br>
+        <label for="roomtype">Room type:</label><br>
+    </div>
+    <div id='div2'>
+        <input type="text" id="name" name="name"><br>
+        <input type="tel" id="number" placeholder="10 digits" pattern="[0-9]{10}" name="number"><br>
+        <input type="number" id="people" name="people" min="5" max="250"><br>
+        <input type="date" id="date" name="date"><br>
+        <input type="time" id="time" name="time"><br>
+        <input type="time" id="time1" name="time1"><br>
+        <input type="radio" id="roomtype" name="rt">AC<br>
+        <input type="radio" id="roomtype" name="rt">Non-AC<br>
+        <input type="radio" id="roomtype" name="rt">Cottage<br>
+        <input type="submit" value="SUBMIT"><br>
+    </div>
+    </form>
+    </fieldset><br>
+    <marquee direction="left"><h4>SCROLL DOWN TO SEE SOME IMAGES OF OUR RESTAURANT.</h4></marquee>
+    <table>
+        <tr>
+            <td>
+            <img src="hut.jpg" width="550" height="350">
+            </td>
+            <td>
+            <p>This is our cottage dining. Each cottage consists of 2 tables of 8 seats each. Hope you'll enjoy eating here in the presence of nature.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <img src="ac.png" width="550" height="350">
+            </td>
+            <td>
+            <p>This is how our AC and Non-Ac dinings look. It consists of 2,4 and 6 members tables. We also have special dining seats for kids.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
