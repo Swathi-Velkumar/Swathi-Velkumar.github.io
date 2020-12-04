@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atchu_Paradise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script>
+            function myFunction() {
+            document.getElementById("sign").innerHTML = "Signin Successful";
+            }
+        </script>
+    <style>
+        body{
+            font-family: fantasy;
+            color:white;
+            background:
+                linear-gradient(
+                rgba(0,0,0,0.70),rgba(0,0,0,0.70)
+            ),url(food2.jpg) no-repeat;
+            background-size: cover;
+        }
+        #box{
+        padding-top: 30px;
+        width:900px;
+        float:right;
+        background-color: linear-gradient(
+                rgba(0,0,0,0.70),rgba(0,0,0,0.70)
+            );
+        }
+        #box ul li{
+        width:160px;
+        float:left;
+        margin: 10px auto;
+        text-align:center;
+        }
+        #box ul li a{
+            text-decoration:none;
+            color:aliceblue;
+        }
+        #box ul li:hover{background-color: chocolate;}
+        #box ul li a:hover{ color:white;}
+        h1
+        {
+            font-size: 40px;
+            font-family: cursive;
+            color:chocolate;
+            letter-spacing: 3px;
+        }
+        #name
+        {
+            float:right;
+            width:100%;
+            text-align: center;
+            padding-left,padding-right: 40px;
+            padding-top:50px;
+        }
+        #login{
+            background-color: linear-gradient(
+                rgba(0,0,0,0.70),rgba(0,0,0,0.70)
+            );
+            height: 200px;
+            width: 500px;
+            position:absolute;
+            top:55%;
+            left:37%;
+            padding:12px;
+            
+        }
+        #login a{
+            color: aliceblue;
+        }
+        li{
+            font-size: 18px;
+            font-family: cursive;
+        }
+        button{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" id="box">
+      <ul type="none" >
+        <li><a href="index2.html">HOME</a></li>
+        <li><a href="Menu2.html">MENU</a></li>
+        <li><a href="OrderOnline2.html" target="_self">ONLINE ORDER</a></li>
+        <li><a href="BookTable2.html" target="_self">BOOK TABLE</a></li>
+        <li><a href="Contact2.html" target="_self">CONTACT</a></li>
+    </ul>
+    </div>
+    </div>
+  </div>
+        
+   <div class="row">
+    <div class="col-sm-2"></div>
+       <div class="col-sm-8" id="name">
+       <h1>Welcome to Restaurant<br>ATCHU PARADISE</h1><br>
+       <h4>Please Signin to get updates of the special offers.</h4>
+       </div>
+       <div class="col-sm-2"></div>
+    </div>
+    
+    
+    <div class="row" id="login">
+        <div><p>Mail ID :</p></div>
+        <div><input type="text" size="40"><br></div>
+        <div><p>Password:</p></div>
+        <div><input type="text" size="40"><br><br></div>
+        <button onclick="myFunction()">SIGNIN</button>
+        <p id="sign"></p>
+
+    </div>
+</body>
+</html>
