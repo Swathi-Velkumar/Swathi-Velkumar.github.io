@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        CGPA CALCULATOR
+    </title>
+    <head>
+        <style>
+            select {
+              width: 100%;
+              max-width: 15ch;
+              border: 2px solid black;
+              border-radius: 0.5em;
+              padding: 0.25em 0.5em;
+              font-size: 1.25rem;
+              cursor: pointer;
+              line-height: 1.1;
+            }
+
+            label
+            {
+                width: 100%;
+              min-width: 5ch;
+              max-width: 15ch;
+
+              padding: 0.25em 0.5em;
+              font-size: 1.25rem;
+              cursor: pointer;
+              line-height: 1.1;
+
+            }
+            button
+            {
+                display: inline-block;
+                font-family: 'robot',sans-serif;
+                font-weight: 300;
+                color: palevioletred;
+                background-color: greenyellow; 
+                text-align: center;
+                border-radius: 2em;
+                border: 0.16em solid rgba(255,255,255,0);
+                padding: 0.3em 1,2em;
+                margin: 0 0.1em 0.1em 0 ;
+                font-size: 1.25rem;
+            }
+
+            button:hover{
+                border-color: palevioletred;
+            }
+        </style>
+    </head>
+    <body class="container p-3 my-3 bg-success text-white" style="background-color: blue">
+
+        <p style="text-align: center; align-items: center ; font-size:x-large; font-weight: 500;">Choose Number of Semester:</p>
+        <div style="text-align: center; align-items: center;" >
+        <select style="text-align: center; align-items: center;" id="list">
+            
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <br>
+        <br>
+          
+          <div  style="align-items: center; text-align: center;" id="output">
+            
+          </div>
+                         
+                   
+        <h1 style="text-align: center; align-items: center;font-size: 1.25rem; ">Your CGPA</h1>
+          <p style="text-align: center; align-items: center;font-size: 2.25rem; font-weight: 1000; color: white;"id="result"></p>
+
+          
+          <script type="text/javascript">
+
+            document.getElementById("list").addEventListener("click",listQ);
+
+            function listQ(){
+              var e = document.getElementById("list");
+
+              if(e.options[e.selectedIndex].value == 2)
+              {
+              var str=code2();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc2);
+              
+              }
+              else if (e.options[e.selectedIndex].value == 3)
+              {              
+              var str=code3();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc3);
+              }
+              else if (e.options[e.selectedIndex].value == 4)
+              {
+              var str=code4();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc4);
+              }
+              else if (e.options[e.selectedIndex].value == 5)
+              {    
+              var str=code5();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc5);
+              }
+              else if (e.options[e.selectedIndex].value == 6)
+              { 
+              var str=code6();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc6);
+              }
+              else if (e.options[e.selectedIndex].value == 7)
+              {
+              var str=code7();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+              document.getElementById("cal").addEventListener("click",calc7);
+              }
+              else if (e.options[e.selectedIndex].value == 8)
+              {
+              var str=code8();
+              str = str+ "<br><br><button id=\"cal\" type=\"button\" style=\"background-color: greenyellow; color:444444\"  class=\"btn btn-default\">Calculate</button>";
+              document.getElementById("output").innerHTML=str;
+
+              document.getElementById("cal").addEventListener("click",calc8);
+              }
+                
+            }
+
+            function code2()
+            {
+                var str="<label id=\"color\" class=\"control-label col-sm-2\">Sem 1: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem1\" name=\"sem1\" size=\"25\"> <br><br>" ;
+                str=str+"<label id=\"color\" class=\"control-label col-sm-2\">Sem 2: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem2\" name=\"sem2\" size=\"25\"> <br><br>" ;
+                return str;
+            }
+
+            function code3()
+            {
+                var str = code2() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 3: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem3\" name=\"sem3\" size=\"25\"><br><br>" ;
+                return str;
+            }
+
+            function code4()
+            {
+                var str = code3() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 4: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem4\" name=\"sem4\" size=\"25\"><br><br>" ;
+                return str;
+            }
+
+            function code5()
+            {
+                var str = code4() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 5: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem5\" name=\"sem5\" size=\"25\"> <br><br>" ;
+                return str;
+            }
+
+            function code6()
+            {
+                var str = code5() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 6: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem6\" name=\"sem6\" size=\"25\"> <br><br>" ;
+                return str;
+            }
+
+            function code7()
+            {
+                var str = code6() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 7: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem7\" name=\"sem7\" size=\"25\"> <br><br>" ;
+                return str;
+            }
+
+            function code8()
+            {
+                var str = code7() ;
+                str = str + "<label id=\"color\" class=\"control-label col-sm-3\">Sem 8: </label>" + "<input type=\"text\" class=\"form-control\" id=\"sem8\" name=\"sem8\" size=\"25\"> <br>" ;
+                return str;
+            }
+
+            function calc2()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                document.getElementById("result").innerHTML=(n1+n2)/2;
+            }
+
+            function calc3()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3)/3;
+            }
+
+            function calc4()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                var n4= parseFloat (document.getElementById("sem4").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3+n4)/4;
+            }
+
+            function calc5()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                var n4= parseFloat (document.getElementById("sem4").value);
+                var n5= parseFloat (document.getElementById("sem5").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3+n4+n5)/5;
+            }
+
+            function calc6()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                var n4= parseFloat (document.getElementById("sem4").value);
+                var n5= parseFloat (document.getElementById("sem5").value);
+                var n6= parseFloat (document.getElementById("sem6").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3+n4+n5+n6)/6;
+            }
+
+            function calc7()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                var n4= parseFloat (document.getElementById("sem4").value);
+                var n5= parseFloat (document.getElementById("sem5").value);
+                var n6= parseFloat (document.getElementById("sem6").value);
+                var n7= parseFloat (document.getElementById("sem7").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3+n4+n5+n6+n7)/7;
+            }
+
+            function calc8()
+            {
+                var n1= parseFloat( document.getElementById("sem1").value);
+                var n2= parseFloat (document.getElementById("sem2").value);
+                var n3= parseFloat (document.getElementById("sem3").value);
+                var n4= parseFloat (document.getElementById("sem4").value);
+                var n5= parseFloat (document.getElementById("sem5").value);
+                var n6= parseFloat (document.getElementById("sem6").value);
+                var n7= parseFloat (document.getElementById("sem7").value);
+                var n8= parseFloat (document.getElementById("sem8").value);
+                document.getElementById("result").innerHTML=(n1+n2+n3+n4+n5+n6+n7+n8)/8;
+            }
+
+            document.getElementById("list").addEventListener("click",listQ);
+          </script>
+    </body>
+</html>
